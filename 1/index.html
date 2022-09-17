@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        h1 {
+            background: green;
+            color: white;
+        }
+
+
+        h2 {
+            background: yellow;
+        }
+
+        p {
+            background: cyan;
+        }
+
+        /* cerquilha, para referenciar ids */
+        #cabecalho-dois {
+            background: purple;
+            color: greenyellow;
+        }
+
+        /* ponto, para referenciar classes */
+        .fundo-vermelho {
+            background: red;
+        }
+
+        .brown {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Posso passar como atributo aos marcadores IDs e Classes 
+        os ids são unicos para cada marcador, já as classes podem 
+        repetir e ter mais de uma com seus nomes separados por espaço-->
+    <h1 id="cabecalho-um" class="fundo-vermelho borda-esquerda">
+        Meu HTML
+    </h1>
+    <h2 id="cabecalho-dois" class="fundo-vermelho">
+        a especificidade do id é uma das maiores, por isso seu back ground está na
+        cor do que foi configurado pelo id
+    </h2>
+    <h2 id="cabecalho-tres" class="fundo-vermelho">
+        header teste 2
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, <b class="brown">consectetur adipisicing elit.</b> Enim aliquam,<br />
+        eaque cumque vero officia accusantium totam ea perspiciatis, amet culpa
+        <br />
+        sunt ad labore, porro similique numquam vel consequatur? Quasi, porro.
+        <br />
+    </p>
+</body>
+
+</html>
